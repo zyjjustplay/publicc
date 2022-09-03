@@ -1,42 +1,57 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'copy.ui'
+## Form generated from reading UI file 'copyVeUXnF.ui'
 ##
-## Created by: Qt User Interface Compiler version 5.15.2
+## Created by: Qt User Interface Compiler version 6.3.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide2.QtCore import *
-from PySide2.QtGui import *
-from PySide2.QtWidgets import *
-
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QLabel, QMainWindow, QMenuBar,
+    QPlainTextEdit, QPushButton, QSizePolicy, QStatusBar,
+    QVBoxLayout, QWidget)
 
 class Ui_maincopy(object):
     def setupUi(self, maincopy):
         if not maincopy.objectName():
             maincopy.setObjectName(u"maincopy")
-        maincopy.resize(697, 364)
+        maincopy.resize(422, 221)
         self.centralwidget = QWidget(maincopy)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.copyn = QPushButton(self.centralwidget)
         self.copyn.setObjectName(u"copyn")
+        font = QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        self.copyn.setFont(font)
 
         self.verticalLayout.addWidget(self.copyn)
 
         self.showtimea = QPushButton(self.centralwidget)
         self.showtimea.setObjectName(u"showtimea")
+        font1 = QFont()
+        font1.setFamilies([u"Microsoft YaHei UI"])
+        font1.setPointSize(10)
+        font1.setBold(True)
+        self.showtimea.setFont(font1)
 
         self.verticalLayout.addWidget(self.showtimea)
 
         self.pastelabel = QLabel(self.centralwidget)
         self.pastelabel.setObjectName(u"pastelabel")
-        font = QFont()
-        font.setPointSize(12)
-        self.pastelabel.setFont(font)
+        font2 = QFont()
+        font2.setPointSize(13)
+        self.pastelabel.setFont(font2)
         self.pastelabel.setAlignment(Qt.AlignCenter)
         self.pastelabel.setWordWrap(False)
 
@@ -51,7 +66,7 @@ class Ui_maincopy(object):
         maincopy.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(maincopy)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 697, 21))
+        self.menubar.setGeometry(QRect(0, 0, 422, 22))
         maincopy.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(maincopy)
         self.statusbar.setObjectName(u"statusbar")
