@@ -1,11 +1,11 @@
 import os
 import sys,pyperclip,time
 import threading
-from PySide2.QtWidgets import *
-from PySide2.QtCore import *
-from PySide2.QtUiTools import QUiLoader
+from PySide6.QtWidgets import *
+from PySide6.QtCore import *
+from PySide6.QtUiTools import QUiLoader
 from ui_copy import Ui_maincopy
-from PySide2.QtGui import *
+from PySide6.QtGui import *
 
 path = os.path.realpath(os.curdir)#获取当前目录的绝对路径
 class my_thread(QThread):
@@ -58,4 +58,4 @@ class Word(QMainWindow, Ui_maincopy):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Word()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
